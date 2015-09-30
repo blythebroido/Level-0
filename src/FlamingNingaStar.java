@@ -10,6 +10,8 @@ import org.jointheleague.graphical.robot.Robot;
  * 2. ask students what robot commands they think they will use to make picture in the laminated hand-outs. */
 
 public class FlamingNingaStar {
+	private static final Color YELLOW = null;
+
 	public static void main(String[] args) {
 
 		int baseSize = 300;		//the size of the black part of the star
@@ -32,11 +34,13 @@ for (int i = 0; i <19; i++) {
 			// 2. Turn the robot 1/8 of a circle
 		b.turn(360/8);
 		b.penDown();
+		b.setPenWidth(10);
 			// 3. Move the robot 64 pixels
 b.move(64);
 			
 			// 4. Turn the robot 40 degrees to the LEFT. (Negative numbers will turn the robot counter-clockwise.)
 			b.turn(-40);
+			b.setPenColor(Color.yellow);
 			// 5. Move the robot the distance in the variable flameSize
 			b.move(200);
 			b.setPenColor(Color.YELLOW);
@@ -53,9 +57,11 @@ b.move(64);
 			// 11. Color your ninja star like Figure 2.	// 2. Turn the robot 1/8 of a circle
 			b.turn(360/8);
 			b.penDown();
+			b.penUp();
+		
 				// 3. Move the robot 64 pixels
 		
 	}
-
+b.move(-175);
 }
 }
