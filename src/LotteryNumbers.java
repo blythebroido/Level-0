@@ -6,7 +6,7 @@ public class LotteryNumbers {
 
 			int a = 10 + new Random().nextInt(39);
 			System.out.println(a);
-			a=a+1;
+			
 		}
 	}
 }
